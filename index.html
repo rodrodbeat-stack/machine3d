@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MASKFORGE — máscaras 3D personalizadas de estética cyberpunk, futurista y analógica.">
+  <title>MASKFORGE // 3D FUTURE LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <div class="brand"><span class="dot"></span> MASKFORGE<span class="muted">//LAB</span></div>
+    <nav>
+      <a href="#modelos">MODELOS</a>
+      <a href="#proceso">PROCESO</a>
+      <a href="#custom">CUSTOM</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
+    <a class="nav-cta" href="#custom">DISEÑAR MÁSCARA</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">[ SYSTEM ONLINE // 3D FABRICATION ]</p>
+        <h1>MÁSCARAS<br><span>DEL FUTURO</span></h1>
+        <p class="lead">Diseño personalizado de máscaras 3D con estética cyberpunk, tecnología analógica y ADN de supervivencia post-apocalíptica.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#custom">INICIAR DISEÑO</a>
+          <a class="btn ghost" href="#modelos">VER MODELOS</a>
+        </div>
+        <div class="telemetry">
+          <span>PRINT_STATUS <b>READY</b></span>
+          <span>CORE_TEMP <b>37.4°C</b></span>
+          <span>BUILD <b>v2.6.0</b></span>
+        </div>
+      </div>
+      <div class="mask-display" aria-label="Representación gráfica de máscara futurista">
+        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+        <div class="mask">
+          <div class="eye e1"></div><div class="eye e2"></div>
+          <div class="vent v1"></div><div class="vent v2"></div><div class="vent v3"></div>
+          <div class="plate"></div>
+        </div>
+        <div class="hud hud-a">UNIT_09<br><small>FACE ARMOR</small></div>
+        <div class="hud hud-b">SCAN // 98.7%</div>
+      </div>
+    </section>
+
+    <section id="modelos" class="section">
+      <div class="section-head">
+        <div><p class="eyebrow">01 // ARMORY</p><h2>MODELOS DE REFERENCIA</h2></div>
+        <span class="code">NO. 001 — 004</span>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="card-art terminator"><span>MK-T01</span></div><h3>STEEL RECON</h3><p>Blindaje facial técnico, líneas industriales y presencia de máquina de combate.</p><span class="tag">CYBER // HARD</span></article>
+        <article class="card"><div class="card-art wasteland"><span>MK-W07</span></div><h3>WASTELAND</h3><p>Estética de supervivencia, piezas expuestas, cuero, metal y desgaste controlado.</p><span class="tag">POST // APOC</span></article>
+        <article class="card"><div class="card-art analog"><span>MK-A13</span></div><h3>ANALOG CORE</h3><p>Paneles mecánicos, respirador industrial y detalles inspirados en tecnología retro.</p><span class="tag">RETRO // TECH</span></article>
+        <article class="card"><div class="card-art sentinel"><span>MK-S21</span></div><h3>SENTINEL</h3><p>Diseño modular para integrar visores, placas, filtros y accesorios intercambiables.</p><span class="tag">MODULAR</span></article>
+      </div>
+    </section>
+
+    <section id="proceso" class="section process">
+      <div class="section-head"><div><p class="eyebrow">02 // FABRICATION</p><h2>DEL CONCEPTO AL OBJETO</h2></div></div>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>BRIEF</h3><p>Definimos estética, medidas, uso y nivel de detalle.</p></div>
+        <div class="step"><b>02</b><h3>3D DESIGN</h3><p>Modelado digital y iteraciones hasta aprobar el diseño.</p></div>
+        <div class="step"><b>03</b><h3>PRINT</h3><p>Fabricación 3D, ensamblaje y tratamiento de superficie.</p></div>
+        <div class="step"><b>04</b><h3>FINISH</h3><p>Pintura, desgaste, componentes y acabado personalizado.</p></div>
+      </div>
+    </section>
+
+    <section id="custom" class="custom">
+      <div class="custom-copy">
+        <p class="eyebrow">03 // CUSTOM PROTOCOL</p>
+        <h2>CREA TU PROPIA UNIDAD</h2>
+        <p>¿Quieres una máscara que parezca recuperada de una instalación secreta, una unidad de reconocimiento o un vehículo de combate del futuro?</p>
+        <ul><li>Escaneo / referencia facial</li><li>Diseño 100% personalizado</li><li>Opciones de visor y respirador</li><li>Acabado metálico, oxidado o industrial</li></ul>
+      </div>
+      <form id="customForm" class="terminal">
+        <div class="terminal-head">CUSTOM_REQUEST.EXE <span>● REC</span></div>
+        <label>CODENAME<input name="codename" required placeholder="Ej: NIGHT_HUNTER"></label>
+        <label>ESTÉTICA<select name="style"><option>Cyberpunk</option><option>Analog Tech</option><option>Wasteland</option><option>Hybrid Future</option></select></label>
+        <label>MENSAJE<textarea name="message" rows="4" placeholder="Describe tu máscara..."></textarea></label>
+        <button class="btn primary" type="submit">TRANSMITIR SOLICITUD</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </section>
+
+    <section id="contacto" class="footer-cta">
+      <p class="eyebrow">[ TRANSMISSION CHANNEL OPEN ]</p>
+      <h2>BUILD SOMETHING<br><span>UNFORGETTABLE.</span></h2>
+      <a class="btn primary" href="mailto:contacto@maskforge.example">CONTACTAR AL LAB</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>MASKFORGE // 3D FUTURE LAB</span>
+    <span>DESIGNED FOR HUMANS // BUILT FOR THE FUTURE</span>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
